@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RRedsAbout</title>
-    </head>
-      <body>
-       <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Image</title>
-    <style>
-      body {
+<head>
+  <title>Coding Background</title>
+  <style>
+    body {
       margin: 0;
       padding: 0;
-      background-image: url('https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif');
+      background-image: url('https://media.tenor.com/sRJd_09tr_IAAAAM/comrade-elmo.gif');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -19,6 +14,94 @@
       color: white;
     }
 
-    </style>
-    </body>
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .content {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 800px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .boxes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      background-color: #4CAF50;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      font-size: 18px;
+      color: white;
+      animation: bounce 2s infinite;
+    }
+
+    .box.blue {
+      background-color: #2196F3;
+      animation-delay: 0.5s;
+    }
+
+    .box.red {
+      background-color: #F44336;
+      animation-delay: 1s;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Welcome to Pato's home page </h1>
+      <p>ekkk</p>
+      <p>nothing much yet here.</p>
+      <p>I currently work at LampMC and Cheese!</p>
+      <p>If you need help with something just dm me @patooss.</p>
+    </div>
+    <div class="boxes">
+      <div class="box">
+        <h3>Box 1</h3>
+        <p>pato1.</p>
+      </div>
+      <div class="box blue">
+        <h3>Box 2</h3>
+        <p>pato2.</p>
+      </div>
+      <div class="box red">
+        <h3>Box 3</h3>
+        <p>pato3.</p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
