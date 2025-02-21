@@ -41,6 +41,42 @@
       font-size: 24px;
       margin-bottom: 20px;
     }
+
+    .boxes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      background-color: #4CAF50;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      font-size: 18px;
+      color: white;
+      animation: bounce 2s infinite;
+    }
+
+    .box.blue {
+      background-color: #2196F3;
+      animation-delay: 0.5s;
+    }
+
+    .box.red {
+      background-color: #F44336;
+      animation-delay: 1s;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
   </style>
 </head>
 <body>
@@ -52,8 +88,20 @@
       <p>I play Lamp MC</p>
       <p>my discord is last_red</p>
     </div>
+    <div class="boxes">
+      <div class="box">
+        <h3>Box 1</h3>
+        <p>pato1.</p>
+      </div>
+      <div class="box blue">
+        <h3>Box 2</h3>
+        <p>pato2.</p>
+      </div>
+      <div class="box red">
+        <h3>Box 3</h3>
+        <p>pato3.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
-
-
