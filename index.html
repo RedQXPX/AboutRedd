@@ -59,7 +59,28 @@
       animation: bounce 2s infinite;
     }
 
-   
+    /* Define the bounce animation */
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Define the blue and red box colors */
+    .blue {
+      background-color: #0000FF; /* Blue */
+    }
+
+    .red {
+      background-color: #FF0000; /* Red */
+    }
+
   </style>
 </head>
 <body>
@@ -74,7 +95,7 @@
     <div class="boxes">
       <div class="box">
         <h3>Box 1</h3>
-        <p>comming  soon?!?!?!?!</p>
+        <p>comming soon?!?!?!?!</p>
       </div>
       <div class="box blue">
         <h3>Box 2</h3>
@@ -88,3 +109,4 @@
   </div>
 </body>
 </html>
+
